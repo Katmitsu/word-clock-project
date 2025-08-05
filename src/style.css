@@ -1,4 +1,15 @@
 h1 {
   text-align: center;
-  color: #333;
+  color: #b256b2;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #555;
+  margin-top: 20px;
+}
+footer a {
+  color: #b256b2;
+  text-decoration: none;
 }
