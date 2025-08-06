@@ -1,3 +1,5 @@
+//Los Angeles Clock
+
 setInterval(function () {
   let losAngelesElement = document.querySelector("#los-angeles");
   let losAngelesDateElement = losAngelesElement.querySelector(".date");
@@ -6,16 +8,19 @@ setInterval(function () {
 
   losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
   losAngelesTimeElement.innerHTML = losAngelesTime.format(
-    "h:mm:ss:SS [(<small>]A[</small>]"
+    "h:mm:ss:SS [<small>]A[</small>]"
   );
 }, 1000);
 
-let lisbonElement = document.querySelector("#lisbon");
-let lisbonDateElement = lisbonElement.querySelector(".date");
-let lisbonTimeElement = lisbonElement.querySelector(".time");
-let lisbonTime = moment().tz("Europe/Lisbon");
+//Lisbon Clock
+setInterval(function () {
+  let lisbonElement = document.querySelector("#lisbon");
+  let lisbonDateElement = lisbonElement.querySelector(".date");
+  let lisbonTimeElement = lisbonElement.querySelector(".time");
+  let lisbonTime = moment().tz("Europe/Lisbon");
 
-lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
-lisbonTimeElement.innerHTML = lisbonTime.format(
-  "h:mm:ss:SS [(<small>]A[</small>]"
-);
+  lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
+  lisbonTimeElement.innerHTML = lisbonTime.format(
+    "h:mm:ss:SS [<small>]A[</small>]"
+  );
+}, 1000);
